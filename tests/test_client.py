@@ -12,6 +12,7 @@ class TestClient(unittest.TestCase):
         self.assertIsNotNone(client.rest)
         self.assertIsNotNone(client.engines)
         self.assertIsNotNone(client.collections)
+        self.assertIsNotNone(client.documents)
 
 
 if __name__ == '__main__':
