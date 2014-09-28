@@ -6,7 +6,8 @@ from tinysou.rest import REST
 
 class TestREST(unittest.TestCase):
 
-    """TestREST"""
+    """Tests for REST."""
+
     def setUp(self):
         self.rest = REST('token')
         self.rest.session.request = mock.Mock()

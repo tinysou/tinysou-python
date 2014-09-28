@@ -10,6 +10,7 @@ class TestClient(unittest.TestCase):
         client = Client('token')
         self.assertEqual(client.token, 'token')
         self.assertIsNotNone(client.rest)
+        self.assertIsNotNone(client.engines)
 
 
 if __name__ == '__main__':
