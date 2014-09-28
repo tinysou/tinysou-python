@@ -1,5 +1,6 @@
 from .rest import REST
 from .engines import Engine
+from .collections import Collection
 
 class Client(object):
 
@@ -9,3 +10,4 @@ class Client(object):
         self.token = token
         self.rest = REST(token)
         self.engines = Engine(self.rest)
+        self.collections = Collection(self.rest)

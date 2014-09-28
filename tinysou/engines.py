@@ -6,16 +6,16 @@ class Engine(object):
         self.rest = rest
 
     def list(self, params=None):
-        self.rest.get('engines', params)
+        return self.rest.get('engines', params)
 
     def create(self, data=None):
-        self.rest.post('engines', data)
+        return self.rest.post('engines', data)
 
     def get(self, name):
-        self.rest.get('engines/' + name)
+        return self.rest.get('engines/' + name)
 
     def update(self, name, data=None):
-        self.rest.put('engines/' + name, data=data)
+        return self.rest.put('engines/' + name, data=data)
 
     def delete(self, name):
-        self.rest.delete('engines/' + name)
+        return self.rest.delete('engines/' + name)
