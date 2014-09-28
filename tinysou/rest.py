@@ -14,7 +14,7 @@ class REST(object):
         self.headers = {
             'Content-Type': 'application/json',
             'User-Agent': 'Tinysou-Python/' + __version__,
-            'Authorization' : 'token ' + self.token
+            'Authorization': 'token ' + self.token
         }
 
     def request(self, method, path, params=None, data=None):

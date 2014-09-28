@@ -8,27 +8,27 @@ TOKEN = 'YOUR_TOKEN'
 ENGINE = 'YOUR_ENGINE_NAME'
 
 engine = {
-  'name': ENGINE,
-  'display_name': 'My Blog'
+    'name': ENGINE,
+    'display_name': 'My Blog'
 }
 
 collection = {
-  'name': 'posts',
-  'field_types': {
-    'title': 'string',
-    'tags': 'string',
-    'author': 'enum',
-    'date': 'date',
-    'body': 'text'
-  }
+    'name': 'posts',
+    'field_types': {
+        'title': 'string',
+        'tags': 'string',
+        'author': 'enum',
+        'date': 'date',
+        'body': 'text'
+    }
 }
 
 document = {
-  'title': 'My First Post',
-  'tags': ['news'],
-  'author': 'Author',
-  'date': datetime.utcnow().isoformat() + 'Z',
-  'body': 'Tinysou start online today!'
+    'title': 'My First Post',
+    'tags': ['news'],
+    'author': 'Author',
+    'date': datetime.utcnow().isoformat() + 'Z',
+    'body': 'Tinysou start online today!'
 }
 
 client = tinysou.Client('YOUR_TOKEN')
