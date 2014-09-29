@@ -129,7 +129,22 @@ client.documents.delete('blog', 'posts', '293ddf9205df9b36ba5761d61ca59a29')
 ### Search
 
 ```python
-client.search('blog', {'q': 'tinysou', 'c': 'posts'})
+client.search('blog', {
+    'q': 'tinysou', 'c': 'posts',
+    'page': 0, 'per_parge': 10,
+    'filter': {
+        'range': {
+            'field': "date",
+            'from': "2014-07-01T00:00:00Z",
+            'to': "2014-08-01T00:00:00Z"
+        }
+    },
+    'sort': {
+        'field': "date",
+        'order': "asc",
+        'mode': "avg"
+    }
+})
 ```
 
 ### Autocomplete
@@ -137,6 +152,10 @@ client.search('blog', {'q': 'tinysou', 'c': 'posts'})
 ```python
 client.autocomplete('blog', {'q': 't', 'c': 'posts'})
 ```
+
+## Examples
+
+See [examples](https://github.com/tinysou/tinysou-python/tree/master/examples)
 
 ## Contributing
 
