@@ -10,6 +10,7 @@ setup(
     description='Tinysou Python Client',
     author='Hemslo Wang',
     author_email='hemslo.wang@gmail.com',
+    url='https://github.com/tinysou/tinysou-python',
     license='MIT',
     packages=['tinysou'],
     install_requires=['requests'],
