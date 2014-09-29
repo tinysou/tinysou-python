@@ -1,6 +1,8 @@
 tinysou-python
 ==============
 
+[![Build Status](https://travis-ci.org/tinysou/tinysou-python.svg?branch=master)](https://travis-ci.org/tinysou/tinysou-python)
+
 Tinysou Python Client
 
 ## Installation
